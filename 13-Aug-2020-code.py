@@ -36,8 +36,9 @@ def gameStart():
         "\n"
         "Here's how we'll play: \n"
         "I generate a random number from 1 to 10, \n"
-        "and you will have to guess it. \n")
-    print("There are 3 difficulties: easy, medium or hard. \n"
+        "and you will have to guess it. \n"
+        "\n"
+        "There are 3 difficulties: easy, medium or hard. \n"
         "The number ranges for each are as follows: \n"
         "EASY: 1 - 10 \n"
         "MEDIUM: 1 - 20 \n"
