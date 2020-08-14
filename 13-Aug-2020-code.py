@@ -5,7 +5,6 @@ initialAsk = input("Shall we play a game? Type 'YES' or 'NO': ")
 
 # --  Function to quit the game
 def quitGame():
-    play == False
     print("\n"
         "Goodbye, I hope to see you again!")
     time.sleep(3)
@@ -193,7 +192,6 @@ def gameStart():
                                     askPlayAgain = input("Type 'EXIT' to exit, or 'PLAY' to play again: ")
 
                             else:     #(5A.2)
-                                play == True
                                 print()
                                 gameStart()
 
