@@ -1,4 +1,4 @@
-# Current Features:
+# Current Features (14 Aug 2020):
 1. Currently with over 200 lines of code (some of the lines are from in-line spacing for stylistic purposes)
 2. Option to select between 3 difficulties (Easy, Medium and Hard)
 3. Option to use hints
