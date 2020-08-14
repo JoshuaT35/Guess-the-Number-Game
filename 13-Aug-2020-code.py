@@ -7,7 +7,7 @@ initialAsk = input("Shall we play a game? Type 'YES' or 'NO': ")
 def quitGame():
     play = False
     print("\n"
-        "Okay, Goodbye.")
+        "Goodbye, I hope to see you again!")
     time.sleep(3)
     quit()
 ###
@@ -28,8 +28,8 @@ else:
         "Let's get started! \n")
 ###
 
-#  --  This function is the Game
-def mainGame():
+#  --  This function is the code for the game
+def gameStart():
 ###
 
     print("This game is called, 'Guess the number!' \n"
@@ -77,7 +77,7 @@ def mainGame():
     "%s mode selected. You have 3 tries to guess the correct number. \n" % (modeSelected))
     ###
 
-    #  --  To ask the user whether they want to to enable hints (and choose how many they want)
+    #  --  Determines how many hints the user gets based on the selected difficulty
     if modeSelected == "EASY":
         print("You have up to 3 hints.")
         hintsLeft = 3
@@ -99,7 +99,7 @@ def mainGame():
     #"random number")
 #print(randomNumber)
 
-    #  --  this is the guessing portion.
+    #  --  This is the guessing portion
     triesLeft = 3
     numbersAlreadyGuessed = []
     print("\n"
@@ -153,7 +153,7 @@ def mainGame():
                 userGuess = input("Can you guess the number?  ")
     ###
 
-    # if player makes a guess
+    #  --  if player makes a guess
         elif userGuess.isdigit() == True:
 
             if int(userGuess) != randomNumber:      # (1A)
@@ -194,7 +194,7 @@ def mainGame():
                             else:     #(5A.2)
                                 play == True
                                 print()
-                                mainGame()
+                                gameStart()
 
                     else:       # (3B)
                         print("Oops, you've already guessed that number. \n")
@@ -228,5 +228,5 @@ def mainGame():
     ###
 
 #  --  Starts the Game
-mainGame()
+gameStart()
 ###
