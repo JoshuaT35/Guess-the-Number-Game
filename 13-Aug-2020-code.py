@@ -1,7 +1,7 @@
 #  --  This asks the user whether they want to play the game
 import time
 print()
-initialAsk = input("Shall we play a game? Type 'YES' or 'NO': ")
+initialAsk = input("Shall we play a game? Type YES or NO: ")
 
 # --  Function to quit the game
 def quitGame():
