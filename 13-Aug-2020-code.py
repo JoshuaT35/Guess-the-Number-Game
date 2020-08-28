@@ -19,7 +19,7 @@ while str.upper(initialAsk) != "YES":
     else:
         print("\n"
             "Sorry, I don't understand. \n")
-        initialAsk = input("Shall we play a game? Type 'YES' or 'NO': ")
+        initialAsk = input("Shall we play a game? Type YES or NO: ")
 
 else:
     play = True
@@ -55,7 +55,7 @@ def gameStart():
     while modeSelected not in modeSelectList:
         print("\n"
         "Oops, that's not a valid difficulty. \n")
-        modeSelected = str.upper(input("Please type your desired difficulty:  "))
+        modeSelected = str.upper(input("Please enter your desired difficulty:  "))
 
     else:
         if modeSelected == "EASY":
@@ -104,8 +104,8 @@ def gameStart():
     numbersAlreadyGuessed = []
     print("\n"
         "Tips: \n"
-        "1. Type 'HINT' and I will give you a number is not the correct number. \n"
-        "2. Type 'LIST' to see your previous guesses. \n")
+        "1. Type HINT and I will give you a number is not the correct number. \n"
+        "2. Type LIST to see your previous guesses. \n")
     userGuess = input("Can you guess the number?  ")
 
     while userGuess != randomNumber:
