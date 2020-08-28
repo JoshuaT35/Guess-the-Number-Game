@@ -19,7 +19,7 @@ while str.upper(initialAsk) != "YES":
     else:
         print("\n"
             "Sorry, I don't understand. \n")
-        initialAsk = input("Shall we play a game game? Type 'YES' or 'NO': ")
+        initialAsk = input("Shall we play a game? Type 'YES' or 'NO': ")
 
 else:
     play = True
